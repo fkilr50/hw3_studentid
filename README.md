@@ -15,31 +15,31 @@ edges = [[0,1], [0,4], [4,1], [4,3], [1,3], [1,2], [3,2]]
 [[1,4], [0,2,3,4], [1,3], [1,2,4], [0,1,3]]
 
 ### Explanation:
--Node 0 is connected to 1 and 4.
--Node 1 is connected to 0,2,3 and 4.
--Node 2 is connected to 1 and 3.
--Node 3 is connected to 1,2 and 4.
--Node 4 is connected to 0,1 and 3.
+- Node 0 is connected to 1 and 4.
+- Node 1 is connected to 0,2,3 and 4.
+- Node 2 is connected to 1 and 3.
+- Node 3 is connected to 1,2 and 4.
+- Node 4 is connected to 0,1 and 3.
 
 ---
 ### Input:
 Enter number of Vertices: 5
-Enter number of edges: 6
-Enter U and V:
-0 1
-0 2
-1 2
-1 3
-2 3
-3 4
+  Enter number of edges: 6
+  Enter U and V:
+  0 1
+  0 2
+  1 2
+  1 3
+  2 3
+  3 4
 
 ### Output:
 Adjacency List:
-0: 1 2
-1: 0 2 3
-2: 0 1 3
-3: 1 2 4
-4: 3
+  0: 1 2
+  1: 0 2 3
+  2: 0 1 3
+  3: 1 2 4
+  4: 3
 
 ---
 ## Question 2
