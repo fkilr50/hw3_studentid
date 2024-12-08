@@ -22,10 +22,24 @@ edges = [[0,1], [0,4], [4,1], [4,3], [1,3], [1,2], [3,2]]
 -Node 4 is connected to 0,1 and 3.
 
 ---
-Input:
+### Input:
+Enter number of Vertices: 5
+Enter number of edges: 6
+Enter U and V:
+0 1
+0 2
+1 2
+1 3
+2 3
+3 4
 
-Output:
-3
+### Output:
+Adjacency List:
+0: 1 2
+1: 0 2 3
+2: 0 1 3
+3: 1 2 4
+4: 3
 
 ---
 ## Question 2
@@ -49,10 +63,17 @@ Visit 1 (next neighbor of 0) → Output: 0, 2, 3,
 Visit 4 (neighbor of 2) → Final Output: 0, 2, 3, 1, 4
 
 ---
-Input:
+### Input:
+Enter the number of vertices: 5
+Enter adjacency list for each vertex (end each list with -1):
+Neighbors of vertex 0: 1 2 -1
+Neighbors of vertex 1: 0 2 3 -1
+Neighbors of vertex 2: 0 1 3 -1
+Neighbors of vertex 3: 1 2 4 -1
+Neighbors of vertex 4: 3 -1
 
-Output:
-3
+### Output:
+BFS Traversal starting from vertex 0: 0 1 2 3 4 
 
 ---
 
@@ -77,10 +98,15 @@ Visit 3 (the first neighbor of 2) → Output: 0, 1, 2, 3
 Backtrack to 2 and visit 4 → Final Output: 0, 1, 2, 3, 4
 
 ---
-Input:
+### Input:
+Neighbors of vertex 0: 1 2 -1
+Neighbors of vertex 1: 0 3 -1
+Neighbors of vertex 2: 0 3 4 -1
+Neighbors of vertex 3: 1 2 -1
+Neighbors of vertex 4: 2 -1
 
-Output:
-3
+### Output:
+DFS Traversal starting from vertex 0: 0 1 3 2 4 
 
 ---
 
@@ -105,6 +131,16 @@ V = 3, E = 3
 
 The Spanning Tree resulting in a weight of 4 is shown above.
 
+---
+### Input:
+Enter the number of vertices (V): 4
+Enter the number of edges (E): 5
+Enter the edges (u v w):
+0 1 10
+0 2 6
+0 3 5
+1 3 15
+2 3 4 
 
-
-
+### Output:
+The sum of weights in the Minimum Spanning Tree (MST) is: 19
